@@ -6,6 +6,11 @@ Simple PWA mobile app built with react
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Note
+For the app to work on your local machine, you will need an api key.
+Inside the src folder create api/config.json inside the config.json {"API_KEY":"your key"}
+You can get a key from here: https://open-platform.theguardian.com/access/
+
 ## Available Scripts
 
 In the project directory, you can run:
