@@ -1,0 +1,26 @@
+#detail{
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+img, embed, 
+object, video {
+  width: 600px;
+	max-width: 100%;
+	height: auto;
+}
+
+.typography--section {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.image{
+  text-align: center;
+}
+
+.divider{
+  height: 10px;
+}

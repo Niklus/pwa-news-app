@@ -1,0 +1,22 @@
+#list{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+.grid {
+  margin-bottom: 32px;
+}
+
+.card__16-9-media {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12.313rem;
+}
+
+.mdc-card{
+  background-color: #fff;
+}

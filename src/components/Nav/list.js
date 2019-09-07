@@ -1,0 +1,138 @@
+export default [
+  {
+   "id":"artanddesign",
+   "webTitle":"Art and design"
+  },
+  {
+   "id":"books",
+   "webTitle":"Books"
+  },
+  {
+   "id":"business",
+   "webTitle":"Business"
+  },
+  {
+   "id":"cities",
+   "webTitle":"Cities"
+  },
+  {
+   "id":"community",
+   "webTitle":"Community"
+  },
+  {
+   "id":"culture",
+   "webTitle":"Culture"
+  },
+  {
+   "id":"education",
+   "webTitle":"Education"
+  },
+  {
+   "id":"environment",
+   "webTitle":"Environment"
+  },
+  {
+   "id":"fashion",
+   "webTitle":"Fashion"
+  },
+  {
+   "id":"film",
+   "webTitle":"Film"
+  },
+  {
+   "id":"football",
+   "webTitle":"Football"
+  },
+  {
+   "id":"lifeandstyle",
+   "webTitle":"Life and style"
+  },
+  {
+   "id":"local",
+   "webTitle":"Local"
+  },
+  {
+   "id":"media",
+   "webTitle":"Media"
+  },
+  {
+   "id":"money",
+   "webTitle":"Money"
+  },
+  {
+   "id":"music",
+   "webTitle":"Music"
+  },
+  {
+   "id":"news",
+   "webTitle":"News"
+  },
+  {
+   "id":"politics",
+   "webTitle":"Politics"
+  },
+  {
+   "id":"science",
+   "webTitle":"Science"
+  },
+  {
+   "id":"social-care-network",
+   "webTitle":"Social Care Network"
+  },
+  {
+   "id":"society",
+   "webTitle":"Society"
+  },
+  {
+   "id":"sport",
+   "webTitle":"Sport"
+  },
+  {
+   "id":"stage",
+   "webTitle":"Stage"
+  },
+  {
+   "id":"technology",
+   "webTitle":"Technology"
+  },
+  {
+   "id":"theguardian",
+   "webTitle":"From the Guardian"
+  },
+  {
+   "id":"theobserver",
+   "webTitle":"From the Observer"
+  },
+  {
+   "id":"travel",
+   "webTitle":"Travel"
+  },
+  {
+   "id":"travel/offers",
+   "webTitle":"Guardian holiday offers"
+  },
+  {
+   "id":"tv-and-radio",
+   "webTitle":"Television & radio"
+  },
+  {
+   "id":"uk-news",
+   "webTitle":"UK news"
+  },
+  {
+   "id":"us-news",
+   "webTitle":"US news"
+  },
+  {
+   "id":"weather",
+   "webTitle":"Weather"
+  },
+  {
+   "id":"women-in-leadership",
+   "webTitle":"Women in Leadership"
+  },
+  {
+   "id":"world",
+   "webTitle":"World news"
+  }
+]

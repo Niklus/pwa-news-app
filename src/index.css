@@ -1,0 +1,18 @@
+/*mdc imports*/
+@import '../node_modules/@material/typography/dist/mdc.typography.css';
+@import '../node_modules/@material/snackbar/dist/mdc.snackbar.css';
+@import '../node_modules/@material/button/dist/mdc.button.css';
+@import '../node_modules/@material/toolbar/dist/mdc.toolbar.css';
+@import '../node_modules/@material/menu/dist/mdc.menu.css';
+@import '../node_modules/@material/drawer/dist/mdc.drawer.css';
+@import '../node_modules/@material/list/dist/mdc.list.css';
+@import '../node_modules/@material/theme/dist/mdc.theme.css';
+@import '../node_modules/@material/layout-grid/dist/mdc.layout-grid.css';
+@import '../node_modules/@material/card/dist/mdc.card.css';
+@import '../node_modules/@material/button/dist/mdc.button.css';
+
+body {
+  margin: 0;
+  background-color: #eeeeee;
+  box-sizing: border-box;
+}
