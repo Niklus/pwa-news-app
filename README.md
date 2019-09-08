@@ -8,7 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Note
 For the app to work on your local machine, you will need an api key.
-Inside the src folder create api/config.json inside the config.json {"API_KEY":"your key"}
+Inside the src folder create a new folder called api and inside that folder create a new file 
+called config.json. Your config.json should contain the following: {"API_KEY":"your key"}
 You can get a key from here: https://open-platform.theguardian.com/access/
 
 ## Available Scripts
