@@ -11,8 +11,8 @@ class App extends React.Component {
 
   constructor(props){
     super(props);
-    this.state = { db : new Dexie('news-database') };
-    this.state.db.version(1).stores({ articles: 'id, sectionId, timeStamp' });
+    this.db = new Dexie('news-database');
+    this.db.version(1).stores({ articles: 'id, sectionId, timeStamp' });
   }
 
   componentDidMount(){
@@ -32,8 +32,8 @@ class App extends React.Component {
         <Nav/>
         <div className="mdc-toolbar-fixed-adjust"> 
           <Router>
-            <Route path="/" exact render={(props) => <NewsList {...props} db={this.state.db} />}/>
-            <Route path="/detail" render={(props) => <NewsDetail {...props} db={this.state.db} />} />
+            <Route path="/" exact render={(props) => <NewsList {...props} db={this.db} />}/>
+            <Route path="/detail" render={(props) => <NewsDetail {...props} db={this.db} />} />
           </Router>
           <SnackBar/>
         </div>
