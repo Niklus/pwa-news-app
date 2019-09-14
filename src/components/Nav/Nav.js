@@ -1,11 +1,13 @@
 import React from 'react';
 import { MDCTemporaryDrawer } from '@material/drawer';
 import { MDCSimpleMenu } from '@material/menu';
-import list from './list';
+import sections from './sections';
 
 class Nav extends React.Component {
 
-  state = { list: list, title: '' }
+  state = { title: '' }
+
+  sections = sections;
 
   componentDidMount(){
     this.updateTitle();
@@ -13,8 +15,8 @@ class Nav extends React.Component {
     this.simpleMenu = new MDCSimpleMenu(document.querySelector('.mdc-simple-menu'));
 
     /** Temporary Hack... onclick does not work on the jsx template*/
-    const list = Array.from(document.querySelectorAll('.switch'));
-    list.forEach(item => item.addEventListener('click', e => this.reset(e)));
+    const list = Array.from(document.querySelectorAll('.list-item'));
+    list.forEach(item => item.addEventListener('click', e => this.switch(e)));
   }
   
   toggleDrawer(){
@@ -37,22 +39,22 @@ class Nav extends React.Component {
       sectionId = str.substring(0, n !== -1 ? n : str.length);
     }
 
-    const obj = this.state.list.find(el => el['id'] === sectionId)
+    const obj = this.sections.find(el => el['id'] === sectionId)
     this.setState({title : obj.webTitle.toUpperCase()})
   }
 
-  reset(e){
+  switch(e){
     this.toggleDrawer();
-    this.setState({title : e.target.innerText.toUpperCase()})
+    this.setState({title : e.target.innerText.toUpperCase()});
     window.scrollTo(0, 0);
   }
 
   render() {
 
-    const listItems = this.state.list.map((item) => {
+    const listItems = this.sections.map((item) => {
       return (
         <div key={item.id}> 
-          <a className="mdc-list-item switch" href={`#${item.id}`}>
+          <a className="mdc-list-item list-item" href={`#${item.id}`}>
             {item.webTitle}
           </a>
           <hr className="mdc-list-divider"/>
