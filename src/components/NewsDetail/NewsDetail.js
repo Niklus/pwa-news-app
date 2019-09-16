@@ -14,6 +14,7 @@ class NewsDetail extends React.Component {
 
   componentDidUpdate() {
     this.showControls(); // show video controls if any
+    this.getLinks()
   }
 
   getById(id){
@@ -37,6 +38,16 @@ class NewsDetail extends React.Component {
     if(videos.length > 0){
       videos.forEach( video => {
         video.controls = true;
+      });
+    }
+  }
+  
+  // Open links in new window
+  getLinks() {
+    const links = document.querySelectorAll('.article_body a');
+    if(links.length > 0){
+      links.forEach( link => {
+        link.target = '_blank';
       });
     }
   }
