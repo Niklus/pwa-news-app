@@ -49,6 +49,23 @@ class Nav extends React.Component {
     window.scrollTo(0, 0);
   }
 
+  share() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'News App',
+        text: 'Check out this news app — it rocks!',
+        url: 'https://pwa-news-app.netlify.com',
+      })
+      .then(() => console.log('Successful share'))
+      .catch((error) => console.log('Error sharing', error));
+    }else {
+      window.open(
+        'https://twitter.com/intent/tweet?text=https://pwa-news-app.netlify.com',
+        '_blank'
+      )
+    }
+  }
+
   render() {
 
     const listItems = this.sections.map((item) => {
@@ -87,9 +104,9 @@ class Nav extends React.Component {
                   <ul className="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
                     <li className="mdc-list-item update" role="menuitem">Update</li>
                     <li className="mdc-list-item" role="menuitem"  onClick={() => document.location.reload(true)} >Reload</li>
-                    {/*<li className="mdc-list-item" role="menuitem" >Delete</li>
+                    {/*<li className="mdc-list-item" role="menuitem" >Delete</li>*/}
                     <li className="mdc-list-divider" role="separator"></li>
-                    <li className="mdc-list-item" role="menuitem">Share...</li>*/}
+                    <li className="mdc-list-item" role="menuitem" onClick={() => this.share()} >Share...</li>
                   </ul>
                 </div>
               </div>
