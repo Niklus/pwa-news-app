@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "dexie": "1.5.1",
-    "dompurify": "1.0.2",
+    "dompurify": "2.0.7",
     "material-components-web": "0.19.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
